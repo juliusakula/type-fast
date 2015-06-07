@@ -1,0 +1,9 @@
+{
+  "name": "juliusakula",
+  "private": true,
+  "version": "0.0.1",
+  "devDependencies": {
+    "alertify": "^0.3.0",
+    "bootstrap": "^3.3.2"
+  }
+}
