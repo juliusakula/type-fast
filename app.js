@@ -233,12 +233,12 @@ angular.module('Keyboard',[])
         },
         {
             key: 'n',
-            code: 77,
+            code: 78,
             classes: 'single'
         },
         {
             key: 'm',
-            code: 78,
+            code: 77,
             classes: 'single'
         },
         {
