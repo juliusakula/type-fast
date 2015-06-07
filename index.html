@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MemeMaker-Simple</title>
+    <title>Learn to Type</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="node_modules/alertify/themes/alertify.core.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="node_modules/alertify/themes/alertify.core.css" />
     <link rel="stylesheet" type="text/css" href="node_modules/alertify/themes/alertify.bootstrap.css" />
-    <script src="node_modules/alertify/src/alertify.js"></script>
-</head>
-<body>
-<header class="navbar navbar-default navbar-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <nav>
-                <ul class="nav navbar-nav">
-                    <a href="#top" role="button" class="navbar-brand">
-                        Justin Murdock
-                    </a>
-                    <li><a href="http://juliusakula.github.io/resume">resume</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-    <canvas id="keyboard" width="500" height="500"></canvas>
+    <script src="node_modules/alertify/src/alertify.js"></script> -->
+    <script src="node_modules/angular-builds/angular.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="app.js"></script>
+</head>
+<body ng-app="Keyboard">
+    <header class="navbar navbar-default navbar-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <a href="#top" role="button" class="navbar-brand">
+                            Justin Murdock
+                        </a>
+                        <li><a href="http://juliusakula.github.io/resume">resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div ng-controller="CtrlOne" class="row">
+        <keyboard></keyboard>
+    </div>
 </body>
 </html>
