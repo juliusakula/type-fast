@@ -1,5 +1,5 @@
 key {
-    font-family: "serif", "sans-serif", "cursive", "fantasy", "monospace";
+    font-family: "Courier", "Courier New", "Monaco", "monospace";
     padding: 10px 5px;
     border-top: 1px solid #888888;
     border-right: 8px solid #888888;
@@ -29,18 +29,24 @@ div {
 }
 
 .bck {
-    padding-left: 13px;
-    padding-right: 13px;
-}
-
-.enter {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .caps {
     padding-left: 24px;
     padding-right: 24px;
+}
+
+.slash {
+    padding-left: 23px;
+    padding-right: 23px;
+    
+}
+
+.enter {
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .shift {
@@ -59,10 +65,19 @@ div {
     margin: 0 6px 0 3px;
 }
 
+.upper {
+    text-transform: uppercase;
+}
+
 .keyboard-row {
     margin-bottom: 30px;
 }
 
-h1 {
+h1, input {
     margin-bottom: 30px;
+}
+
+header {
+    height: 80px;
+    margin-top: -20px;
 }

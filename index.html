@@ -7,16 +7,17 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="node_modules/alertify/themes/alertify.core.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/alertify/themes/alertify.core.css" />
     <link rel="stylesheet" type="text/css" href="node_modules/alertify/themes/alertify.bootstrap.css" />
-    <script src="node_modules/alertify/src/alertify.js"></script> -->
+    <script src="node_modules/alertify/src/alertify.js"></script>
     <script src="node_modules/angular-builds/angular.min.js"></script>
     
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="node_modules/random-words/index.js"></script>
     <script src="app.js"></script>
 </head>
 <body ng-app="Keyboard">
-    <header class="navbar navbar-default navbar-top">
+    <header class="container navbar navbar-default navbar-top">
         <div class="navbar-inner">
             <div class="container">
                 <nav>
@@ -30,8 +31,9 @@
             </div>
         </div>
     </header>
-    <h1 class="col-xs-offset-1 col-xs-10">The Justin Murdock Project For Folks Who Can't Type Good And Wanna Learn To Do Other Stuff Good Too (start typing)</h1>
-    <div ng-controller="CtrlOne" class="row">
+    <h1 class="col-xs-offset-1 col-xs-10 text-muted text-center">Learn To Type Good</h1>
+    <div ng-controller="mainCtrl">
+        <challenge-area></challenge-area>
         <keyboard></keyboard>
     </div>
 </body>
