@@ -1,7 +1,7 @@
 angular.module('Keyboard',[])
 .service('text', function(){ 
     return { 
-        text: "the quick brown fox jumped over the lazy dog"
+        text: "the quick brown fox jumps over the lazy dog"
     }; 
 })
 .controller('mainCtrl', ['$scope', 'text', function($scope, text){
@@ -20,7 +20,7 @@ angular.module('Keyboard',[])
 .directive('keyboard', ['$document', '$timeout', 'text', function($document, $timeout, text) {
     return {
         restrict: 'E',
-        template: '<div ng-repeat="row in rows" class="col-md-offset-2 col-md-8 keyboard-row">    <div ng-repeat="item in row">        <key alphanum="item.key" code="item.code" class="key {{item.classes}} text-center" id="{{item.key}}"></key>    </div></div>',
+        template: '<div ng-repeat="row in rows" class="col-md-12 keyboard-row">    <div ng-repeat="item in row">        <key alphanum="item.key" code="item.code" class="key {{item.classes}} text-center" id="{{item.key}}"></key>    </div></div>',
         controller: function($scope){
             //$scope.row1 = ['`','1','2','3','4','5','6','7','8','9','0','-','=']
             // get keycodes fast - http://keycodes.atjayjo.com/
