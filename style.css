@@ -23,6 +23,16 @@ div {
     background-color: #dddddd;
 }
 
+
+.key-error {
+    background-color: #ff0000;
+}
+
+
+.key-success {
+    background-color: #00ff00;
+}
+
 .tab {
     padding-left: 20px;
     padding-right: 20px;

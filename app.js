@@ -1,3 +1,5 @@
+alertify.set('notifier','position', 'top-left');
+
 angular.module('Keyboard',[])
 .service('text', function(){ 
     return { 
@@ -404,16 +406,21 @@ angular.module('Keyboard',[])
                     //event.preventDefault();
                 }
                 if(event.which == scope.code){
-                    element.toggleClass('active');
+                    element.addClass('key-success');
                     if(scope.code == 16){ //if shift make other keys capital
                         element.parent().parent().parent().children().addClass('upper');
+                    }
+                    else if(scope.code == 20){ //if CAPS LOCK toggle all keys capital
+                        element.parent().parent().parent().children().toggleClass('upper');
                     }
                 }
             });
             $document.bind("keyup", function (event) {
                 event.preventDefault();
                 if(event.which == scope.code){
-                    element.toggleClass('active');
+                    element.removeClass('active');
+                    element.removeClass('key-error');
+                    element.removeClass('key-success');
                     if(scope.code == 16){ //if shift make other keys capital
                         element.parent().parent().parent().children().removeClass('upper');
                     }
