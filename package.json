@@ -6,6 +6,7 @@
     "alertify": "^0.3.0",
     "angular-builds": "https://github.com/DanTup/angular-builds/tarball/1.2.14",
     "bootstrap": "^3.3.2",
-    "random-words": "0.0.1"
+    "random-words": "0.0.1",
+    "tether-shepherd": "^1.2.0"
   }
 }
