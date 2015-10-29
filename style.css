@@ -83,11 +83,16 @@ keyboard div{
     margin-bottom: 30px;
 }
 
-h1, input {
+.challenge-input {
     margin-bottom: 30px;
 }
 
-header {
-    height: 80px;
-    margin-top: -20px;
+.challenge-sentence {
+    text-align: center;
+    font-weight: 900;
+    margin: 0 auto 30px;
+    font-size: 20px;
+    padding: 8px 0 16px 0;
+    width: 100%;
+    background-color: #cddccd;
 }

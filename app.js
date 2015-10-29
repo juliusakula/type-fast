@@ -357,7 +357,7 @@ angular.module('Keyboard',[])
 .directive('challengeArea', ['$document', '$timeout', 'text', function($document, $timeout, text){
     return {
         restrict: 'E',
-        template: ('<div class="col-xs-6 col-xs-offset-3"><p class="challenge-sentence">{{text}}</p><form name="myForm"><input name="blah" type="text" class="form-control" ng-model="blah" same-as="text" focus-on="domIsReady">{{pattern}}</form></div>'),
+        template: ('<div class="col-xs-8 col-xs-offset-2"><p class="challenge-sentence">{{text}}</p><form name="myForm"><input name="blah" type="text" class="form-control challenge-input" ng-model="blah" same-as="text" focus-on="domIsReady">{{pattern}}</form></div>'),
         controller: function($scope){
             $scope.$watch('blah', function(newVal, oldVal){
                 if($scope.blah == $scope.text){
