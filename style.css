@@ -23,7 +23,6 @@ keyboard div{
     background-color: #dddddd;
 }
 
-
 .key-error {
     background-color: #ff0000;
 }
@@ -31,6 +30,7 @@ keyboard div{
 
 .key-success {
     background-color: #00ff00;
+    transform: translateX(10px);
 }
 
 .tab {

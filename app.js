@@ -30,7 +30,7 @@ angular.module('Keyboard',[])
                 {
                     key: '`',
                     code: 192,
-                    classes: 'single'
+                    classes: 'single key-success'
                 },
                 {
                     key: '1',
