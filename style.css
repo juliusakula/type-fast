@@ -19,6 +19,10 @@ keyboard div{
     display: inline;
 }
 
+div keyboard {
+    margin: 0 auto;
+}
+
 .active {
     background-color: #dddddd;
 }
@@ -29,8 +33,14 @@ keyboard div{
 }
 
 
-.key-success {
-    background-color: #00ff00;
+.key-pressed {
+    position: relative;
+    top:7px;
+    border-top: 8px solid #888888;
+    border-right: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    border-left: 8px solid #888888;
+    background-color: #efefef;
 }
 
 .tab {

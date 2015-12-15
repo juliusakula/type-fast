@@ -406,7 +406,8 @@ angular.module('Keyboard',[])
                     //event.preventDefault();
                 }
                 if(event.which == scope.code){
-                    element.addClass('key-success');
+                    element.addClass('key-pressed');
+                    element.removeClass('key');
                     if(scope.code == 16){ //if shift make other keys capital
                         element.parent().parent().parent().children().addClass('upper');
                     }
@@ -418,9 +419,10 @@ angular.module('Keyboard',[])
             $document.bind("keyup", function (event) {
                 event.preventDefault();
                 if(event.which == scope.code){
+                    element.addClass('key');
                     element.removeClass('active');
                     element.removeClass('key-error');
-                    element.removeClass('key-success');
+                    element.removeClass('key-pressed');
                     if(scope.code == 16){ //if shift make other keys capital
                         element.parent().parent().parent().children().removeClass('upper');
                     }
